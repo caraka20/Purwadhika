@@ -1,3 +1,5 @@
+
+
 console.log("=============== latihan function & arr =============");
 const triangle = (n) => {
   let angka = 1;

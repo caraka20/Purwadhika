@@ -357,3 +357,15 @@ const stringToArr = (n) => {
 };
 let kata1 = "hello world";
 // console.log(stringToArr(kata1));
+
+
+let arr = []
+let arr1= [1,2,3]
+let arr2= [3,2,1]
+let nama = '1234567'
+arr[0] = nama[0]
+arr[1] = nama[2]
+// arr.push(arr1)
+// arr.push(arr2)
+console.log(arr);
+
