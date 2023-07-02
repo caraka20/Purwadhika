@@ -191,7 +191,7 @@ for (let i = nama.length - 1; i >= 0; i--) {
 }
 console.log(aman);
 
-///////////////////////
+////////////////////////////
 var bintang = "";
 
 for (var i = 0; i < 5; i++) {
@@ -202,7 +202,7 @@ for (var i = 0; i < 5; i++) {
 }
 console.log(bintang);
 
-///////////
+////////////////////////////
 var bintangg = "";
 
 for (var i = 5; i > 0; i--) {
@@ -213,12 +213,8 @@ for (var i = 5; i > 0; i--) {
 }
 console.log(bintangg);
 
-// *****
-//  ****
-//   ***
-//    **
-//     *
 
+////////////////////////////
 var bintanggg = "";
 for (var i = 5; i > 0; i--) {
   for (var j = 5; j > 0; j--) {

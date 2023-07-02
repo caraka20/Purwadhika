@@ -124,20 +124,28 @@ langkah 4 : melakukan perulangan menggunakan i dan jika dalam perulangan itu dit
 pada perulangan j, jika j == 0 maka helo[j] diubah menjadi capital kemudian indexx di reset menjadi 0 agar ketika melakukan perulangan berikutnya indexx tidak akan rancu dengan nilai index yg sudah di isi sebelumnya pada perulangan i. dan jika j == indexx maka nilai pada helo[j].toUpperCase akan ditambahkan ke hasilIni, jika kondisi j!=0 dan j!=indexx makan hasilIni += hel0 [i]
 */
 let helo = "hello world haha hehehhe test lagi ok sudah alhamdulillah";
-let indexx = "";
+let indexx = 0;
 let hasilIni = "";
+let kecil1 = "abcdefghijklmnopqrstuvwxyz";
+let capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 for (let i = 0; i <= helo.length - 1; i++) {
   if (helo[i] == " ") {
-    // console.log(helo[i]);
-    indexx += i + 1;
+    indexx = i + 1;
   }
-  // console.log(indexx);
   for (let j = i; j <= i; j++) {
     if (j == 0) {
-      hasilIni += helo[j].toUpperCase();
-      indexx = 0;
+      for (let k = 0; k < kecil1.length; k++) {
+        if (helo[0] == kecil1[k]) {
+          hasilIni += capital[k];
+        }
+      }
+      // indexx = 0;
     } else if (j == indexx) {
-      hasilIni += helo[j].toUpperCase();
+      for (let l = 0; l < kecil1.length; l++) {
+        if (helo[i] == kecil1[l]) {
+          hasilIni += capital[l];
+        }
+      }
       indexx = 0;
     } else {
       hasilIni += helo[i];
@@ -170,6 +178,8 @@ jika string sama makan string akan dimasukan ke variable ke 3 dan diubah menjadi
 
 let str = "The QuiCk BrOwN Fox";
 let res2 = "";
+let besar2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let kecil2 = "abcdefghijklmnopqrstuvwxyz";
 
 for (let i = 0; i < str.length; i++) {
   res2 += str[i].toLocaleLowerCase();
@@ -257,23 +267,93 @@ console.log(res0);
 
 console.log("===============latihan selesai=============");
 
-function createTrianglePattern(height) {
-  let counter = 1;
-  let pattern = '';
-
-  for (let row = 1; row <= height; row++) {
-    for (let col = 1; col <= row; col++) {
-      pattern += counter.toString().padStart(2, '0') + ' ';
-      counter++;
+console.log("=============== latihan function & arr =============");
+const triangle = (n) => {
+  let angka = 1;
+  let hasil = "";
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+      if (angka < 10) {
+        angka = "0" + angka;
+      }
+      hasil += angka + " ";
+      angka++;
     }
-    pattern += '\n';
+    hasil += "\n";
   }
+  return hasil;
+};
+// console.log(triangle(5));
 
-  return pattern;
-}
+// kelipatan 3 = fizz, kelipatan 5 = buzz, kelipatan 3&5 = fizzbuzz
+const fizzBuzz = (n) => {
+  let hasil = "";
+  for (i = 1; i <= n; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      hasil = i + " = fizzbuzz";
+    } else if (i % 3 == 0) {
+      hasil = i + " = fizz";
+    } else if (i % 5 == 0) {
+      hasil = i + " = buzz";
+    } else {
+      hasil = i;
+    }
+    console.log(hasil);
+    hasil = "\n";
+  }
+};
+// fizzBuzz(30)
 
-// Example usage
-const triangleHeight = 4;
-const pattern = createTrianglePattern(triangleHeight);
-console.log(pattern);
+// hitung berat dan tinggi badan
+const hitung = (berat, tinggi) => {
+  let hasil = berat / (tinggi * tinggi);
+  hasil = hasil.toFixed(1);
+  // console.log(hasil);
+  if (hasil < 18.5) {
+    return hasil + " = less weight";
+  } else if (hasil >= 18.5 && hasil <= 24.9) {
+    return hasil + " = ideal";
+  } else if (hasil >= 25.0 && hasil <= 29.9) {
+    return hasil + " = over weight";
+  } else if (hasil >= 30.0 && hasil <= 39.9) {
+    return hasil + " = very overweight";
+  } else {
+    return hasil + " = obesity";
+  }
+};
+// console.log(hitung(60,1.6));
 
+// hapus isi arr yg ganjil dan mengembalikan arr baru yang berisi angka genap
+const arrGenap = (n) => {
+  let arrBaru = [];
+  for (i = 0; i < n.length; i++) {
+    if (n[i] % 2 == 0) {
+      arrBaru.push(n[i]);
+    }
+  }
+  // console.log(arrBaru);
+  return arrBaru;
+};
+let angkaRandom = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 45, 67, 88, 32, 56,
+  43, 21, 54, 634, 63,
+];
+// console.log(arrGenap(angkaRandom));
+
+// memisahkan string dan mengubahnya menjadi array kata Contoh : “Halo Dunia” → [“Halo”, “Dunia”]
+const stringToArr = (n) => {
+  let hasil = [];
+  let kata = "";
+  for (let i = 0; i < n.length; i++) {
+    kata += n[i];
+    if (n[i] == " ") {
+      hasil.push(kata);
+      kata = "";
+    } else if (i == n.length - 1) {
+      hasil.push(kata);
+    }
+  }
+  return hasil;
+};
+let kata1 = "hello world";
+// console.log(stringToArr(kata1));
