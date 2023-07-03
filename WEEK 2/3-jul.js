@@ -1,6 +1,44 @@
 
 
 console.log("=============== latihan function & arr =============");
+// untuk mencari nilai paling besar
+function number(num) {
+  // let highestValue = 0;
+  // let avgValue;
+  let tampungNilai = num[0] //50
+  for (let i = 1; i < num.length; i++) {
+    if (tampungNilai  > num[i]){ //100 < 50
+        tampungNilai=tampungNilai
+    }else if (tampungNilai < num[i]) { //100>50
+      tampungNilai = num[i] //50
+    }
+  } 
+  return tampungNilai
+}
+
+console.log(number([300, 100, 1150, 150]));
+
+
+/*
+1
+12
+123
+*/
+const triangleO = (n) => {
+  let angka = 1;
+  let hasil = "";
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+      hasil += j + " ";
+      // angka++;
+    }
+    hasil += "\n";
+  }
+  return hasil;
+};
+console.log(triangleO(5));
+
+
 const triangle = (n) => {
   let angka = 1;
   let hasil = "";
@@ -16,7 +54,7 @@ const triangle = (n) => {
   }
   return hasil;
 };
-// console.log(triangle(5));
+console.log(triangle(5));
 
 // kelipatan 3 = fizz, kelipatan 5 = buzz, kelipatan 3&5 = fizzbuzz
 const fizzBuzz = (n) => {
@@ -35,7 +73,7 @@ const fizzBuzz = (n) => {
     hasil = "\n";
   }
 };
-// fizzBuzz(30)
+fizzBuzz(30)
 
 // hitung berat dan tinggi badan
 const hitung = (berat, tinggi) => {
@@ -54,7 +92,7 @@ const hitung = (berat, tinggi) => {
     return hasil + " = obesity";
   }
 };
-// console.log(hitung(60,1.6));
+console.log(hitung(60,1.6));
 
 // hapus isi arr yg ganjil dan mengembalikan arr baru yang berisi angka genap
 const arrGenap = (n) => {
@@ -71,7 +109,7 @@ let angkaRandom = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 45, 67, 88, 32, 56,
   43, 21, 54, 634, 63,
 ];
-// console.log(arrGenap(angkaRandom));
+console.log(arrGenap(angkaRandom));
 
 // memisahkan string dan mengubahnya menjadi array kata Contoh : “Halo Dunia” → [“Halo”, “Dunia”]
 const stringToArr = (n) => {
@@ -88,5 +126,8 @@ const stringToArr = (n) => {
   }
   return hasil;
 };
-let kata1 = "hello world";
-// console.log(stringToArr(kata1));
+// let kata1 = "hello world";
+console.log(stringToArr('hello world'));
+
+
+

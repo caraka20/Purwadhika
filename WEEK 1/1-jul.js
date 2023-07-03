@@ -57,7 +57,7 @@ arr4.pop();
 arr4.pop();
 // console.log(arr4);
 
-// 4. UNSHIFT => menambahkan element baru di awal arr
+// 4. UNSHIFT => menambahkan element baru di awal arr tanpa menghilangkan arr [0]
 let arr5 = ["aku", "seorang", "manusia", "biasa"];
 arr5.unshift("pertama", "wkwk");
 // console.log(arr5);
@@ -179,7 +179,8 @@ let selamatPagi = ucapkanSalam("pagi");
 let selamatSiang = ucapkanSalam("Siang");
 let selamatMalam = ucapkanSalam("Malam");
 // console.dir(selamatPagi)
-// selamatPagi('caraka')
+// selamatPagi('rafa')
+// console.log(ucapkanSalam("Pagi")('raka'));
 
 // menampilkan berapa x function itu berjalan dengan closure
 function add() {
@@ -227,3 +228,4 @@ const [b,c,d] = coba3
 // console.log(c);
 // console.log(d);
 
+// concat => sama seperti push tetapi tidak merubah arr sebelumnya, mennggabungkan 2 arr menjadi 1

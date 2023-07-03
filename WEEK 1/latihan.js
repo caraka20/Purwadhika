@@ -180,19 +180,27 @@ langkah 1 : membuat variable yg isinya string The QuiCk BrOwN Fox
 langkah 2 : membuat variable yg isinya sama dengan langkah 1 tetapi huruf diubah menjadi kecil semua menggunakan perulangan
 lankah 3 : membuat variable untuk isi nya string kosong yg nantinya di isi dengan perulangan 
 langkah 4 : melakukan perulangan apakah isi string pada variable 1 dan 2 sama
-jika string sama makan string akan dimasukan ke variable ke 3 dan diubah menjadi huruf besar, dan jika string pd langkah 1 dan 2 berbeda maka string akan dimasukan ke string pd langkah 3  dan string langsung dimasukan.
+jika string sama makan string akan dimasukan kex variable ke 3 dan diubah menjadi huruf besar, dan jika string pd langkah 1 dan 2 berbeda maka string akan dimasukan ke string pd langkah 3  dan string langsung dimasukan.
  */
 
 let str = "The QuiCk BrOwN Fox";
 let res2 = "";
 let besar2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let kecil2 = "abcdefghijklmnopqrstuvwxyz";
+let titipIndex = 0
 
 for (let i = 0; i < str.length; i++) {
-  res2 += str[i].toLocaleLowerCase();
+  titipIndex = i
+  for (let j = 0; j < kecil.length; j++) {
+    if(str[titipIndex] == kecil2[j]){
+      res2 += str[titipIndex];
+    } else if (str[titipIndex] == besar2[j]) {
+      res2 += kecil2[j];
+    }
+  }
 }
 console.log(str);
-// console.log(res2);
+console.log(res2);
 
 let hasilJadi = "";
 for (let i = 0; i < res2.length; i++) {
