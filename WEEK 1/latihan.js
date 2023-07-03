@@ -19,6 +19,10 @@ melakukan perkondisian apabila variable kata == variable balik maka outputnya pa
 let kata = "Ama";
 let balik = "";
 
+/*
+
+*/
+
 for (i = kata.length - 1; i >= 0; i--) {
   balik += kata[i];
 }
@@ -47,17 +51,17 @@ dihitung 3 angka dari belakang)
 buat perulangan yg jika setiap kelipatan 3 maka ditambah tanda .
 kemudian balikan lagi nominal menjadi semula
 */
-let nominal = "1000000";
+let a = 100000000000
+let nominal = a.toString()
 let rp = "Rp. ";
 let belakang = ",00";
-
+let hasil = "";
 // nominal kebalik
 let kebalik = "";
 for (let i = nominal.length - 1; i >= 0; i--) {
   kebalik += nominal[i];
 }
 // console.log(kebalik);
-
 // memberikan tanda titik setelah kelipatan 3
 let baru = "";
 for (i = 0; i < kebalik.length; i++) {
@@ -67,12 +71,22 @@ for (i = 0; i < kebalik.length; i++) {
   }
 }
 console.log(baru);
+let baru1 = ''
+if (baru[baru.length-1] == '.') {
+  for (let j = 0; j < baru.length -1; j++) {
+    baru1 += baru[j]
+  }
+  for (let i = baru1.length - 1; i >= 0; i--) {
+    hasil += baru1[i];
+  }
+} else {
+  for (let i = baru.length - 1; i >= 0; i--) {
+    hasil += baru[i];
+  }
+}
+console.log(baru1);
 
 // dibalik lagi menjadi semula
-let hasil = "";
-for (let i = baru.length - 1; i >= 0; i--) {
-  hasil += baru[i];
-}
 console.log(rp + hasil + belakang);
 
 // soal : Write a code to remove the first occurrence of a given “search string” from a string
@@ -82,26 +96,22 @@ perulangan j yg jika cariString[0] itu sama dengan test[i], kalo tidak sesuai ma
 
 pakai continue kemungkinan bisa
 */
-let test = "hello World tell st cari dell";
-let cariString = "ell";
+let test = "hello World torl st cari dorl";
+let cariString = "orl";
 let hasilCari = "";
 let cek1 = "";
-// let cek2 = ''
+let isocurance = true
 let testIndex = 0;
 // console.log(test);
 for (let i = 0; i < test.length; i++) {
   // hasilCari += test[i]
-  if (
-    test[i] == cariString[0] &&
-    test[i + 1] == cariString[1] &&
-    test[i + 2] == cariString[2]
-  ) {
+  if (test[i] == cariString[0] && test[i + 1] == cariString[1] && test[i + 2] == cariString[2] &&isocurance) {
     for (let j = i; j < i + cariString.length; j++) {
       cek1 += test[j];
       testIndex = j;
     }
-
     i = testIndex;
+    isocurance = false
   } else {
     hasilCari += test[i];
   }
@@ -109,10 +119,7 @@ for (let i = 0; i < test.length; i++) {
 console.log(cek1);
 console.log(test);
 console.log(hasilCari);
-// console.log(cek1);
-// console.log(cek2);
-// console.log(testIndex);
-// console.log(sama);
+
 
 // soal : Write a code to capitalize the first letter of each word in a string
 // ○ Example : “hello world” → “Hello World”
