@@ -107,11 +107,11 @@ for (i = 1; i <= angka; i++) {
 }
 
 // 3 Write a code to check whether the number is prime number or not
-var angka2 = 29;
-var bilangan = 0;
+var angka2 = 30;
+var bilangan = 2;
 
-for (let i = 1; i <= angka2; i++) {
-  if (angka2 % i == 0) {
+for (let i = 1; i <= angka2; i++) { //
+  if (angka2 % i == 0) { //
     bilangan++;
   }
 

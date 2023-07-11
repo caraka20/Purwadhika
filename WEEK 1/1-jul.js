@@ -99,7 +99,7 @@ let arr11 = [1, 2, 3, 6, 7, 5, 8, 4, 10, 20];
 arr11.sort(function (a, b) {
   return a - b;
 });
-// console.log(arr11.join(' - '));
+console.log(arr11.join(' - '));
 
 // 11. filter = mencari nilai pada arr dan mengembalikannya dalam bentuk arr
 let arr12 = [1, 2, 3, 6, 7, 5, 8, 4, 10, 20];
