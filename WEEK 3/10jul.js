@@ -31,6 +31,7 @@ console.log('\n');
 console.log('==== SET ===='); //mereduce, ilangin yg sama dan yg asli ga ilang
 let fruit = ['banana','grape','apple','mango','orange','banana','grape']
 let newFruit = new Set(fruit)
+console.log(newFruit);
 newFruit.add('bananaa') //nambah element
 console.log(newFruit.has('apple')); //cek apakah mempunyai elemen apple
 console.log(newFruit);
