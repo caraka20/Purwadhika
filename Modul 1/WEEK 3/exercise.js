@@ -116,7 +116,7 @@ function bbb(nilai) {
         return tampung1[1]
     }
 }
-console.log(bbb([2,2,2,1,1,1,2,2,2]));
+// console.log(bbb([2,2,2,1,1,1,2,2,2]));
 
 
 // 6
@@ -167,7 +167,7 @@ for (let k = 0; k < hasil.length; k++) {
 return hasilAkhir
 } 
 
-console.log(romawi('MCIX')); // [1000, 100, 1000, 10, 100, 1, 5] = 1000 + 900 + 90 + 4
+// console.log(romawi('MCIX')); // [1000, 100, 1000, 10, 100, 1, 5] = 1000 + 900 + 90 + 4
 
 
 // 7
@@ -250,7 +250,7 @@ function raka(nilai) {
     }
     return hasilAkhir
 }
-console.log(raka([7,1,5,3,6,4,7]));
+// console.log(raka([7,1,5,3,6,4,7]));
 
 
 
@@ -275,4 +275,4 @@ function pascal(row) {
     }
     return result
 }
-console.log(pascal(5));
+// console.log(pascal(5));
