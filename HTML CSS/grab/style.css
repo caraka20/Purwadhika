@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-areas: 'satu' 'dua' 'tiga' 'empat';
+}
+
+/* navbar */
+.navbar {
+    background-color: rgb(240, 239, 237);
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    grid-area: satu;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.kiri {
+    /* padding: 5px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.kiri span{
+    font-size: small;
+}
+
+.navbar .logo .humberger {
+    height: 35px;
+    width: 70px;
+}
+
+.grab {
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.menu {
+    /* background-color: blueviolet; */
+    display: flex;
+}
+
+.menu ul li {
+    /* background-color: rgb(129, 245, 245); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-menu {
+    width: 20px;
+    height: 20px;
+    /* background-color: rgb(202, 147, 81); */
+}
+/* navbar end */
+
+
+/* banner */
+.banner {
+ /* box-sizing: border-box; */
+ grid-area: 2;
+}
+.banner h3 {
+    display: none;
+}
+
+.gambar-banner{
+    background-image: url(https://assets.grab.com/wp-content/uploads/sites/9/2019/07/15115859/Kejutan-Super-header-landing-page-1440x700.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    margin-top: -50px;
+    background-repeat: no-repeat;
+}
+
+.banner span {
+    font-size: 4em;
+    /* background-color: rgb(18, 18, 17); */
+    width: 50%;
+    color: black;
+    margin-left: 150px;
+    position: relative;
+    top: 400px;
+    display: inline-block;
+    padding-bottom: 40px;
+}
+/* banner end */
+
+
+/* tentang */
+.tentang {
+    grid-area: tiga;
+}
+
+.tentang .atas {
+    margin-top: -10px;
+}
+
+.tentang .atas ul li{
+    padding: 30px 70% 30px 15%;
+    color: white;
+    font-size: medium;
+    font-weight: 900;
+    /* letter-spacing: 2px; */
+}
+.tentang .atas ul li:nth-child(1){
+    background-color: rgb(2, 60, 2);
+}
+.tentang .atas ul li:nth-child(2){
+    background-color: rgb(41, 147, 41);
+}
+
+.tentang .bawah {
+    /* background-color: aqua; */
+    /* width: 50%; */
+    padding: 30px 50% 30px 15%;
+    font-size: 2.5em;
+}
+/* tentang end */
+
+
+/* main-content */
+.main-content {
+    /* width: 70%; */
+    grid-area: empat;
+}
+
+.main {
+    gap: 5px;
+}
+
+.main .atas-main {
+    /* grid-column: 1/2; */
+    width: 70%;
+    margin: auto;
+}
+
+.main .atas-main ul {
+    display: flex;
+    gap: 100px;
+    /* background-color: aqua; */
+    justify-content: start;
+    align-items: center;
+}
+
+.main .atas-main ul li{
+    display: flex;
+    gap: 20px;
+    font-size: x-large;
+    color: rgb(138, 136, 136);
+}
+
+.main .atas-main ul li:nth-child(1){
+    display: flex;
+    gap: 20px;
+    font-size: x-large;
+    color: whitesmoke;
+    background-color: black;
+    padding: 10px 25px;
+    border-radius: 100px;
+}
+
+
+
+
+.main .pengantar {
+   display: grid;
+   /* background-color: blanchedalmond; */
+   grid-template-columns: 1fr 2fr;
+}
+
+.pengantar {
+    border-top: 1px solid black;
+    margin: auto;
+    width: 70%;
+    /* padding: 20px 0px 0px px; */
+    margin-top: 50px;
+    /* background-color: aqua; */
+}
+.pengantar .main-kiri {
+ padding-top: 20px;
+}
+
+.pengantar .main-kanan .content{
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 5px;
+}
+.pengantar .main-kanan .image{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(69, 236, 180);
+    padding: 7px;
+    border-radius: 50px;
+}
+
+
+.pengantar .content {
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.pengantar .content:nth-child(4) {
+    border-bottom: 0px;
+    margin-bottom: -20px;
+}
+.pengantar .mobil{
+    border-bottom: none;
+    padding-bottom: 20px;
+}
+
+.pengantar .content div{
+    margin-left: 50px;
+}
+
+.pengantar .content div span{
+    font-size: 19px;
+}
+/* main end */
+
+
+/* end */
+.end {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    margin-bottom: 25px;
+    font-size: larger;
+}
+
+@media only screen and (max-width: 1220px) {
+    .container {
+        /* background-color: blue; */
+    }
+    .banner span {
+        display: none;
+    }
+    .banner .gambar-banner {
+        margin-top: 2px;
+        height: 400px;
+    }
+    .banner h3 {
+        font-size: 2em;
+        color: black;
+        padding: 20px;
+        width: 75%;
+        top: 400px;
+        margin: auto;
+        display: block;
+        padding-bottom: 40px;
+        /* background-color: blue; */
+    }
+
+    .main .atas-main ul {
+        gap: 30px;
+    }
+   }
+
+
+@media only screen and (max-width: 800px) {
+    .container {
+        /* background-color: blue; */
+    }
+
+    .banner span {
+        display: none;
+    }
+    .banner .gambar-banner {
+        margin-top: 2px;
+        height: 200px;
+    }
+    .banner h3 {
+        font-size: 2em;
+        color: black;
+        padding: 20px;
+        margin-right: 270px;
+        top: 400px;
+        display: block;
+        padding-bottom: 40px;
+    }
+    .tentang {
+        width: 100%;
+    }
+    .tentang .bawah{
+        font-size: 2em;
+        width: 100%;
+        /* background-color: aqua; */
+        padding: 50px 30px;
+    }
+    .main .atas-main {
+        width: 100%;
+        overflow: scroll;
+        padding: 20px;
+    }
+    .main .atas-main ul {
+        gap: 40px;
+    }
+    .main .atas-main ul li{
+        /* gap: 10px; */
+        font-size: larger;
+    }
+    .main .pengantar {
+        grid-template-columns: 1fr;
+     }
+     .pengantar .content {
+        display: flex;
+        gap: 3px;
+        justify-content: start;
+        /* background-color: bisque; */
+     }
+
+    .pengantar {
+        width: 100%;
+        /* padding: 20px; */
+    }
+    .pengantar .main-kiri {
+        padding: 20px;
+    }
+    .pengantar .content div{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .tentang .atas ul li{
+        padding: 30px 50% 30px 20px;
+        color: white;
+        font-size: medium;
+        font-weight: 900;
+        /* letter-spacing: 2px; */
+    }
+   }
+
+@media only screen and (max-width: 480px) {
+    .container {
+        /* background-color: blue; */
+    }
+    .navbar .menu li{
+        display :none
+    }
+    .navbar .logo {
+        /* background-color: aqua; */
+        margin-left: -70px;
+    }
+    .banner span {
+        display: none;
+    }
+    .banner .gambar-banner {
+        margin-top: 2px;
+        height: 200px;
+    }
+    .banner h3 {
+        font-size: 2em;
+        color: black;
+        padding: 20px;
+        margin-right: 100px;
+        top: 400px;
+        display: block;
+        padding-bottom: 40px;
+    }
+    .tentang {
+        width: 100%;
+    }
+    .tentang .bawah{
+        width: 100%;
+        /* background-color: aqua; */
+        padding: 30px 20px;
+    }
+    .main .atas-main {
+        width: 100%;
+        overflow: scroll;
+        padding: 20px;
+    }
+    .main .atas-main ul {
+        gap: 10px;
+    }
+    .main .atas-main ul li{
+        gap: 5px;
+        font-size: larger;
+    }
+    .main .pengantar {
+        grid-template-columns: 1fr;
+     }
+
+     .pengantar {
+        width: 100%;
+        margin-right: 20px;
+    }
+    .pengantar .content{
+        padding-right: 10px;
+    }
+    .pengantar .main-kiri {
+        padding: 20px;
+    }
+    .tentang .atas ul li{
+        padding: 30px 50% 30px 20px;
+        color: white;
+        font-size: medium;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+   }

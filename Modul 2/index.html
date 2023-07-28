@@ -3,110 +3,154 @@
 
 <head>
     <title>belajar html</title>
-    <link rel="stylesheet" href="./style.css">
+    <style>
+    * {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    .container {
+        /* background-color: aquamarine; */
+
+    }
+
+    /* exercise 1 */
+    .satu {
+        width: 75%;
+        margin: 20px auto;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+     .satu img{
+        width: 80%;
+        margin: 20px auto;
+     }
+
+    .satu p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .satu button {
+        padding: 8px 25px;
+        margin-bottom: 20px;
+        background-color: rgb(75, 75, 247);
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 3px double black;
+    }
+
+    /* exercise 2 */
+    .dua {
+        width: 75%;
+        margin: 20px auto;
+        /* border: 2px solid black; */
+    }
+
+    .dua table{
+        /* table-layout : auto; */
+        border-collapse: collapse;
+        /* border: 2px solid black; */
+        padding: 10px;
+        background-color: chocolate;
+    }
+
+
+    .dua img {
+        width: 170px;
+    }
+
+    </style>
+
 </head>
 
 <body>
+    <div class="container">
+        <div class="satu">
+            <img src="./gambar1.png" alt="">
+            <h1>Beautiful!</h1>
+            <p>Modal with a custom image</p>
+            <button>Lovely!</button>
+        </div>
+        <div class="dua">
+            <table cellspacing="5" border="1" cellpadding="5px">
+                <tr>
+                    <th>No.</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Food</th>
+                    <th>Group</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="./satu.png" alt=""></td>
+                    <td>Smilling Cat</td>
+                    <td>Healty Fish</td>
+                    <td>
+                         <input type="radio" id="Vertebrata1" name="group" value="30">
+                         <label for="Vertebrata1">Vertebrata</label>
+                         <input type="radio" id="Invertebrata1" name="group" value="60">
+                         <label for="Invertebrata1">Invertebrata</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="./dua.png" alt=""></td>
+                    <td>Happy Dog</td>
+                    <td>Fresh Meat</td>
+                    <td>
+                         <input type="radio" id="Vertebrata2" name="group1">
+                         <label for="Vertebrata2">Vertebrata</label>
+                         <input type="radio" id="Invertebrata2" name="group1">
+                         <label for="Invertebrata2">Invertebrata</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="./tiga.png" alt=""></td>
+                    <td>Confuse Simpanse</td>
+                    <td>Sweet Banana</td>
+                    <td>
+                         <input type="radio" id="Vertebrata3" name="group2">
+                         <label for="Vertebrata3">Vertebrata</label>
+                         <input type="radio" id="Invertebrata3" name="group2">
+                         <label for="Invertebrata3">Invertebrata</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="./empat.png" alt=""></td>
+                    <td>Frisky JellyFish</td>
+                    <td>Salwater Plankton</td>
+                    <td>
+                         <input type="radio" id="Vertebrata4" name="group4">
+                         <label for="Vertebrata4">Vertebrata</label>
+                         <input type="radio" id="Invertebrata4" name="group4">
+                         <label for="Invertebrata4">Invertebrata</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="./lima.png" alt=""></td>
+                    <td>Swimming Squid</td>
+                    <td>Small Fish</td>
+                    <td>
+                         <input type="radio" id="Vertebrata5" name="group5">
+                         <label for="Vertebrata5">Vertebrata</label>
+                         <input type="radio" id="Invertebrata5" name="group5">
+                         <label for="Invertebrata5">Invertebrata</label>
+                    </td>
+                </tr>
 
-    <!--
-    <p>ini buat <b>bikin</b> paragraf => hello world</p>
-
-    <h6>ini heading 6</h6>
-    <h5>ini heading 5</h5>
-    <h4>ini heading 4</h4>
-    <h3>ini heading 3</h3>
-    <h2>ini haading 2</h2>
-    <br/>
-    <h1>ini heading 1</h1> 
-    <hr/> 
-
-    ini komentar
-    <span>ini span<br/><strong>ini strong </strong><br/></span>
-    <span><small>ini small </small><br>
-    ini span <sub>ini sub</sub> , <sup>ini sup</sup> 
-    </span>
-    <p>ini paragraf p</p>
-    
-    <h1>list siswa purwadhika</h1>
-    <ol>
-        <li>kebon</li>
-        <li>carakka</li>
-        <li>anggoro</li>
-        <li>aryo</li>
-        <li>haekal</li>
-        <li>andre</li>
-    </ol>
-
-    <table>
-        <tr>
-            <th>no</th>
-            <th>nama</th>
-            <th>alamat</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td colspan="">carakka</td>
-            <td>kelapa dua</td>
-        </tr>
-        <tr>
-            <td colspan="">1</td>
-            <td>carakka</td>
-            <td>kelapa dua</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>carakka</td>
-            <td>kelapa dua</td>
-        </tr>
-
-    </table>
-
-    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_table_border" target="_blank">click me</a>
-
-    <h3>ini gambar kucing</h3>
-    <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2021/08/10074627/Ketahui-X-Jenis-Kucing-yang-Paling-Bersahabat.jpg.webp" />
-
-    <img alt="ini gambar" style="width: 500px;" src="./contoh.png"/>
-
-    <form>
-        <label>email</label>
-        <input type="email" placeholder="masukan email"><br/>
-
-        <label>nama lengkap</label>
-        <input type="name" placeholder="nama lengkap"><br/>
-
-        <label>password</label>
-        <input class="input pasword" type="password" placeholder="password"> <br/>
-
-        <label>jenis kelamin</label>
-        <input type="checkbox"> <br />
-
-        <label>nama</label>
-        <input type="radio"> <br />
-
-        <label>umur</label>
-        <input type="number" placeholder="umur"> <br />
-
-        <label>tanggal</label>
-        <input type="date"> <br />
-
-        <label>submit</label>
-        <input type="submit">
-
-        <label></label>
-    </form> -->
-
-
-    <div>
-        <div class="container1">
-            <div class="container">
-                <img src="./gambar1.png">
-            </div>
-            <div>Beautiful</div>
+            </table>
         </div>
     </div>
-
-
 </body>
 
 

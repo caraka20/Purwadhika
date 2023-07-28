@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /* grid */
+  .container {
+    display: grid;
+    grid-template-areas: 
+    'navbar' 'hero' 'product' 'discount' 'footer'
+    ;
+  }
+
+  .navbar {
+    grid-area: navbar;
+    /* background-color: rgb(215, 139, 40); */
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: transparent;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(29, 137, 101);
+  }
+
+  .hero {
+    grid-area: hero;
+    margin-top: -100px;
+    color: black;
+  }
+
+  .product {
+    grid-area: product;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    margin-top: -350px;
+  }
+
+  .discount {
+    grid-area: discount;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  #footer {
+    grid-area: footer;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    background-color: rgb(5, 129, 89);
+    padding: 250px 30px 50px 30px;
+    margin-top: -200px;
+  }
+
+/* navbar */
+  .nav_kiri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: space-around;
+    /* background-color: bisque; */
+    font-size: larger;
+    color: white;
+  }
+
+  .logo{
+    /* margin-right: 120px; */
+    margin-left: 200px;
+    /* background-color: blue; */
+  }
+
+  .navigasi ul li {
+    list-style-type: none;
+    margin-right: 30px;
+  }
+
+  .navigasi ul {
+    display: flex;
+    /* background-color: beige; */
+  }
+
+  .logo b {
+    color: rgb(236, 165, 64);
+
+  }
+
+
+  /* hero */
+.hero .bungkus img{
+    background-size: cover;
+    width: 100%;
+  }
+
+  .hero .bungkus div {
+    position: relative;
+    z-index: 5;
+    /* margin-top: 20px; */
+    top: -850px;
+    /* left: 600px; */
+    /* background-color: blue; */
+    width: 500px;
+    /* height: 100px; */
+    padding: 50px 50px 50px 50px;
+    left: 500px;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .hero .bungkus button {
+    padding: 20px 25px;
+    margin-top: 50px;
+    margin-left: 70px;
+    background-color: rgb(225, 166, 17);
+    color: white;
+    border: none;
+    font-size: medium;
+    border-radius: 10px;
+  }
+
+
+  /* product */
+  .atas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+
+  .atas span {
+    font-size: xx-large;
+    font-weight: 900;
+  }
+
+  .card1 {
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: end;
+    /* background-color: aqua; */
+  }
+  
+  .card1 div {
+    background-color: rgb(184, 179, 179);
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+  }
+
+  .card1 div img{
+    width: 180px;
+    height: 200px;
+    margin-bottom: -60px;
+  }
+
+
+  .card2 {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+
+  }
+
+  .card2 .poto img {
+    width: 500px;
+  }
+
+.tulisan {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: start;
+    gap: 5px;
+    width: 300px;
+    margin-left: -250px;
+}
+.tulisan .span1 {
+    font-size: x-large;
+    font-weight: 500;
+    margin-bottom: -10px;
+}
+
+.tulisan span {
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.tulisan button {
+    background-color: rgb(225, 166, 17);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    margin-left: 30px;
+}
+
+
+.discount img {
+    width: 75%;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+/* footer */
+#footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#footer div .foot {
+    font-size: xx-large;
+    font-weight: 700;
+}
