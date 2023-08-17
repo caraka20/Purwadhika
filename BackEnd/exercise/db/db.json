@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "uid": 58720931,
+      "username": "masdefry",
+      "password": "raka",
+      "email": "masdefry@gmail.com",
+      "role": "admin"
+    },
+    {
+      "username": "raka",
+      "email": "caraka@gmail.com",
+      "password": "raka",
+      "role": "admin",
+      "uid": 1692192873280
+    }
+  ],
+  "movies": [
+    {
+      "name": "Inception",
+      "release_date": "2010-07-16",
+      "release_month": "July",
+      "release_year": 2010,
+      "duration_min": 148,
+      "genre": "Science Fiction",
+      "status": "non show",
+      "location": "bandung",
+      "time": "9 AM"
+    },
+    {
+      "name": "The Shawshank Redemption",
+      "release_date": "1994-09-23",
+      "release_month": "September",
+      "release_year": 1994,
+      "duration_min": 142,
+      "genre": "Drama",
+      "status": "on show",
+      "location": "bandung",
+      "time": "9 AM"
+    },
+    {
+      "name": "The Dark Knight",
+      "release_date": "2008-07-18",
+      "release_month": "July",
+      "release_year": 2008,
+      "duration_min": 152,
+      "genre": "Action",
+      "status": "non show",
+      "location": "jakarta",
+      "time": "8 AM"
+    },
+    {
+      "name": "Pulp Fiction",
+      "release_date": "1994-10-14",
+      "release_month": "October",
+      "release_year": 1994,
+      "duration_min": 154,
+      "genre": "Crime",
+      "status": "on show",
+      "location": "bandung",
+      "time": "8 AM"
+    },
+    {
+      "name": "Avatar",
+      "release_date": "2009-12-18",
+      "release_month": "December",
+      "release_year": 2009,
+      "duration_min": 162,
+      "genre": "Adventure",
+      "status": "on show",
+      "location": "jakarta",
+      "time": "9 AM"
+    },
+    {
+      "name": "Forrest Gump",
+      "release_date": "1994-07-06",
+      "release_month": "July",
+      "release_year": 1994,
+      "duration_min": 142,
+      "genre": "Drama",
+      "status": "on show",
+      "location": "bandung",
+      "time": "8 AM"
+    },
+    {
+      "name": "The Lord of the Rings: The Fellowship of the Ring",
+      "release_date": "2001-12-19",
+      "release_month": "December",
+      "release_year": 2001,
+      "duration_min": 178,
+      "genre": "Fantasy",
+      "status": "non show",
+      "location": "jakarta",
+      "time": "9 AM"
+    },
+    {
+      "name": "The Matrix",
+      "release_date": "1999-03-31",
+      "release_month": "March",
+      "release_year": 1999,
+      "duration_min": 136,
+      "genre": "Science Fiction",
+      "status": "on show",
+      "location": "bandung",
+      "time": "9 AM"
+    },
+    {
+      "name": "Star Wars: Episode IV - A New Hope",
+      "release_date": "1977-05-25",
+      "release_month": "May",
+      "release_year": 1977,
+      "duration_min": 121,
+      "genre": "Science Fiction",
+      "status": "on show",
+      "location": "bandung",
+      "time": "9 AM"
+    },
+    {
+      "name": "Jaws",
+      "release_date": "1975-06-20",
+      "release_month": "June",
+      "release_year": 1975,
+      "duration_min": 124,
+      "genre": "Thriller",
+      "status": "on show",
+      "location": "bandung",
+      "time": "8 AM"
+    }
+  ]
+}
