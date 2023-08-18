@@ -1,18 +1,84 @@
 {
   "users": [
     {
-      "uid": 58720931,
-      "username": "masdefry",
-      "password": "raka",
-      "email": "masdefry@gmail.com",
-      "role": "admin"
+      "nama_lengkap": "Kebon Rubani",
+      "email": "kebon@gmail.com",
+      "password": "kebonn",
+      "saldo": 895000,
+      "point": 1,
+      "id": 1
     },
     {
-      "username": "raka",
-      "email": "caraka@gmail.com",
-      "password": "raka",
-      "role": "admin",
-      "uid": 1692192873280
+      "nama_lengkap": "Caraka Wijaya",
+      "email": "kebon2@gmail.com",
+      "password": "kebonn",
+      "saldo": 1200000,
+      "point": 8,
+      "id": 2
+    },
+    {
+      "nama_lengkap": "Tri Anggoro",
+      "email": "jati@gmail.com",
+      "password": "kebonn",
+      "saldo": 3000000,
+      "point": 5,
+      "id": 3
+    },
+    {
+      "nama_lengkap": "rafansa Okta",
+      "email": "rafa@gmail.com",
+      "password": "kebonn",
+      "saldo": 4000000,
+      "point": 2,
+      "id": 5
+    },
+    {
+      "nama_lengkap": "Haekal Hafizh",
+      "email": "haekallll@gmail.com",
+      "password": "kebonn",
+      "saldo": 3000000,
+      "point": 8,
+      "id": 6
+    },
+    {
+      "nama_lengkap": "Muhammad Rian",
+      "email": "rian@gmail.com",
+      "password": "kebonn",
+      "saldo": 1000000,
+      "point": 0,
+      "id": 7
+    },
+    {
+      "nama_lengkap": "Bayu Aja",
+      "email": "bayu@gmail.com",
+      "password": "kebonn",
+      "saldo": 1000000,
+      "point": 0,
+      "id": 8
+    },
+    {
+      "nama_lengkap": "carakka wijaya",
+      "email": "wijaya@gmail.com",
+      "password": "123456",
+      "saldo": 5250,
+      "point": 2,
+      "id": 9
+    },
+    {
+      "nama_lengkap": "haekal",
+      "email": "haekal@gmail.com",
+      "password": "kebon",
+      "saldo": 100000,
+      "point": 0,
+      "uid": 1692338923045
+    },
+    {
+      "nama_lengkap": "blabalab",
+      "email": "balalbaab@gmail.com",
+      "password": "balbalabla",
+      "saldo": 100000,
+      "point": 0,
+      "uid": 1692339809866
     }
   ],
   "movies": [
@@ -23,9 +89,9 @@
       "release_year": 2010,
       "duration_min": 148,
       "genre": "Science Fiction",
-      "status": "non show",
+      "status": "next",
       "location": "bandung",
-      "time": "9 AM"
+      "time": "8 AM"
     },
     {
       "name": "The Shawshank Redemption",
@@ -36,7 +102,7 @@
       "genre": "Drama",
       "status": "on show",
       "location": "bandung",
-      "time": "9 AM"
+      "time": "8 AM"
     },
     {
       "name": "The Dark Knight",
@@ -45,7 +111,7 @@
       "release_year": 2008,
       "duration_min": 152,
       "genre": "Action",
-      "status": "non show",
+      "status": "next",
       "location": "jakarta",
       "time": "8 AM"
     },
@@ -89,7 +155,7 @@
       "release_year": 2001,
       "duration_min": 178,
       "genre": "Fantasy",
-      "status": "non show",
+      "status": "next",
       "location": "jakarta",
       "time": "9 AM"
     },
@@ -126,5 +192,6 @@
       "location": "bandung",
       "time": "8 AM"
     }
-  ]
+  ],
+  "tracker": [{ "id": 1, "name": "akka", "nominal": 50000, "kategori": "akka" }]
 }

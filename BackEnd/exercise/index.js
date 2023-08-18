@@ -1,18 +1,16 @@
 const express = require("express")
 const app = express()
-const {userRouter,} = require("./router")
-const {moviesRouter} = require("./router")
+const cors = require("cors")
+const {userRouter, movieRouter} = require("./router")
 app.use(express.json())
+app.use(cors())
 
-// app.use("/movies", moviesRouter)
-console.log(moviesRouter);
-// console.log(userRouter);
+// console.log(movieRouter);
+
 app.use("/users", userRouter)
+app.use("/movies", movieRouter)
 
-app.get("/", (req, res) => {
-    res.send("ini halaman utama")
-})
-
-app.listen(3000, () => {
+app.listen(3004, () => {
     console.log("selamat server anda berjalan");
 })
+
