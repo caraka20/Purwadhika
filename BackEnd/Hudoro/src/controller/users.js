@@ -1,11 +1,20 @@
-
+const UsersModel = require("../models/users")
 // kita bikin function nya disini, biar di routesnya tinggal panggil functionnya jadi di routes nya bersih
-const getAllUsers = (req, res) => {
-    res.json(
-        {
-            message : "GET All Users Success"
-        }
-    )
+const getAllUsers = async (req, res) => {
+    try {
+        console.log(test);
+        const [data] = await UsersModel.getAllUsers()
+        res.json({
+            message : "data berhasil di get",
+            data : data
+        })
+    } catch (error) {
+        res.json({
+            message : "error",
+            err : error
+        })
+    }
+
 }
 
 const postAllUsers = (req, res) => {

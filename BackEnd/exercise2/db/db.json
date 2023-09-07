@@ -1,0 +1,46 @@
+{
+  "pengeluaran": [
+    {
+      "nama": "Bensin",
+      "nominal": 5000,
+      "kategori": "Transportasi",
+      "tanggal": "2023-08-20",
+      "id": 6
+    },
+    {
+      "nama": "Nasi Padang",
+      "nominal": 10000,
+      "kategori": "Makanan",
+      "tanggal": "2023-08-19",
+      "id": 7
+    },
+    {
+      "nama": "Tas Baru",
+      "nominal": 10000,
+      "kategori": "Shop",
+      "tanggal": "2023-09-18",
+      "id": 8
+    },
+    {
+      "nama": "Shopee",
+      "nominal": 10000,
+      "kategori": "Shop",
+      "tanggal": "2023-09-18",
+      "id": 9
+    },
+    {
+      "nama": "Tokopedia",
+      "nominal": 10000,
+      "kategori": "Shop",
+      "tanggal": "2023-08-19",
+      "id": 10
+    },
+    {
+      "nama": "Lalala",
+      "nominal": 15000,
+      "kategori": "Shop",
+      "tanggal": "2023-08-20",
+      "id": 10
+    }
+  ]
+}

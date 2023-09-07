@@ -17,8 +17,8 @@ module.exports = (sequelize, DataTypes) => {
     nama_lengkap: DataTypes.STRING,
     email: DataTypes.STRING,
     password: DataTypes.STRING,
-    phone: DataTypes.STRING,
-    address: DataTypes.STRING,
+    status: DataTypes.STRING,
+    kode: DataTypes.STRING,
     createdAt : {
       type: DataTypes.DATE,
       defaultValue: new Date()
